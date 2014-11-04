@@ -1,0 +1,15 @@
+#footer {
+  position: absolute; }
+
+@media (min-width: 1024px) {
+  #footer {
+    position: absolute;
+    bottom: 0; } }
+.mTitle {
+  border-bottom: 1px solid; }
+
+.mImg img {
+  width: 100%; }
+
+.btn-youtube {
+  padding: 10px; }
