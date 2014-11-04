@@ -3,7 +3,7 @@ Bíóhúsið
 Gagnvirkur, responsive gagnagrunnsvef sem heldur utan um bíóhús, þ.e.a.s. heldur utan um allar sýningar sem eru á dagsskrá í viðkomandi sal.
 Kerfið þarf að halda utan um dagsetningar á atburðum s.s. sýningum. Það þarf að vera hægt að skrá notendur inn í kerfið.
 
-#Vefur
+##Vefur
 **Notandi**
 á að geta skráð sig inn
 Pantað á mynd sem honum langar á 
@@ -17,7 +17,7 @@ Bætt/eytt og breytt við sýningum
 Skoðað pantanir
 Breytt fríðandarklúbbstöðu meðlims
 
-#C#
+##C#
 **Umsjónarmaður á að geta gert eftirfarandi:**
 1. Meðlimir Skrá/breyta/eyða/skoða
 2. Atburður Skrá/breyta/eyða/skoða
