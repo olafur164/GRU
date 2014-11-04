@@ -17,7 +17,7 @@ Kerfið þarf að halda utan um dagsetningar á atburðum s.s. sýningum. Það 
 - Skoðað pantanir
 - Breytt fríðandarklúbbstöðu meðlims
 
-## C#
+## C\#
 **Umsjónarmaður á að geta gert eftirfarandi:**
 - Meðlimir Skrá/breyta/eyða/skoða
 - Atburður Skrá/breyta/eyða/skoða
