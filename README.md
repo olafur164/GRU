@@ -5,24 +5,24 @@ Kerfið þarf að halda utan um dagsetningar á atburðum s.s. sýningum. Það 
 
 ##Vefur
 **Notandi**
-á að geta skráð sig inn
-Pantað á mynd sem honum langar á 
-sjá allar upplýsingar um myndina, trailer af youtube, ratings.
-Fríðindaklúbbur
-Fengið áminningu um atburð
-Séð hvað eru margir miðar eftir.
-Stjórnandi
-Á að geta bætt/eytt og breytt inn myndum
-Bætt/eytt og breytt við sýningum
-Skoðað pantanir
-Breytt fríðandarklúbbstöðu meðlims
+- Á að geta skráð sig inn
+- Pantað á mynd sem honum langar á 
+- Sjá allar upplýsingar um myndina, trailer af youtube, ratings.
+- Fríðindaklúbbur
+- Fengið áminningu um atburð
+- Séð hvað eru margir miðar eftir.
+- Stjórnandi
+- Á að geta bætt/eytt og breytt inn myndum
+- Bætt/eytt og breytt við sýningum
+- Skoðað pantanir
+- Breytt fríðandarklúbbstöðu meðlims
 
 ##C#
 **Umsjónarmaður á að geta gert eftirfarandi:**
-1. Meðlimir Skrá/breyta/eyða/skoða
-2. Atburður Skrá/breyta/eyða/skoða
-3. Þátttakendur á ákveðin atburð Skrá/breyta/eyða/skoða
-4. Ekki á að vera hægt að eyða út atburði ef einhver er meðlimur er skráður á hann
-5. Ekki á að vera hægt að eyða út meðlimi ef hann er skráður á atburð
-6. Gefið öðrum notanda Admin réttindi
+- Meðlimir Skrá/breyta/eyða/skoða
+- Atburður Skrá/breyta/eyða/skoða
+- Þátttakendur á ákveðin atburð Skrá/breyta/eyða/skoða
+- Ekki á að vera hægt að eyða út atburði ef einhver er meðlimur er skráður á hann
+- Ekki á að vera hægt að eyða út meðlimi ef hann er skráður á atburð
+- Gefið öðrum notanda Admin réttindi
 
