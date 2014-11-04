@@ -26,7 +26,7 @@
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Forsíða</a></li>
+						<li><a href="#">Forsíða</a></li>
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>
@@ -121,7 +121,7 @@
 								<label for="newUserPhoneNumber">Símanúmer</label>
 								<div class="input-group">
 									<div class="input-group-addon"><i class="fa fa-phone"></i></div>
-									<input name="newUserPhone" type="password" class="form-control" id="newUserPhoneNumber" placeholder="Símanúmerið þitt..." required>
+									<input name="newUserPhone" type="tel" class="form-control" id="newUserPhoneNumber" placeholder="Símanúmerið þitt..." required>
 								</div>
 							</div>
 
@@ -131,6 +131,15 @@
 								<div class="input-group">
 									<div class="input-group-addon"><i class="fa fa-birthday-cake"></i></div>
 									<input name="newUserBirthday" type="date" class="form-control" id="newUserBirthday" placeholder="Afmælisdagurinn þinn..." required>
+								</div>
+							</div>
+
+							<!-- zipcode -->
+							<div class="form-group">
+								<label for="newUserZipCode">Póstnúmer</label>
+								<div class="input-group">
+									<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+									<input name="newUserZipCode" type="text" class="form-control" id="newUserZipCode" placeholder="Póstnúmerið þitt..." max="3" min="3" required>
 								</div>
 							</div>
 
@@ -160,9 +169,6 @@
 
 
 
-							<!-- zipcode -->
-
-
 							<button type="submit" class="btn btn-default pull-left">Nýskrá</button>
 
 							<div class="clearfix"></div>
@@ -178,7 +184,7 @@
 		<!-- jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Bíóhúsið<small> - Aðeins það allra besta</small></h1>
+				<h1>Bíóhúsið<small> - Aðeins það allra besta Hópur 15</small></h1>
 			</div>
 		</div>
 
