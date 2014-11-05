@@ -33,7 +33,7 @@ require_once 'app/getMovieData.php';
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Forsíða</a></li>
+						<li><a href="index.php">Forsíða</a></li>
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>
