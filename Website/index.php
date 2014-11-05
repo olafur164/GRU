@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Bíóhúsið - Bestir á Íslandi</title>
-		<link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 	</head>
@@ -21,17 +21,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Bíóhúsið</a>
+					<a class="navbar-brand" href="index.php">Bíóhúsið</a>
 				</div> <!-- navbar header -->
 
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
-<<<<<<< HEAD
 						<li><a href="index.php">Forsíða</a></li>
-=======
-						<li class="active"><a href="index.php">Forsíða</a></li>
->>>>>>> 56d0c3044851ae6e3a7bc48c3c364f829f2bbd7d
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>

@@ -8,9 +8,8 @@ require_once 'app/getMovieData.php';
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bíóhúsið<?php if ($error === false) { echo '- ' . $mname; } else {} ?></title>
-		<link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
-		<link rel="stylesheet" href="assets/stylesheets/theater/theater.css">
+		<title>Bíóhúsið<?php if ($error === false) { echo ' - ' . $mname; } else {} ?></title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="http://jwpsrv.com/library/mZjMVGQhEeScFQoORWfmyA.js"></script>
 		<script src="assets/javascripts/responsive-table.js"></script>
