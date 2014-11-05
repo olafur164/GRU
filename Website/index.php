@@ -27,7 +27,11 @@
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
+<<<<<<< HEAD
 						<li><a href="index.php">Forsíða</a></li>
+=======
+						<li class="active"><a href="index.php">Forsíða</a></li>
+>>>>>>> 56d0c3044851ae6e3a7bc48c3c364f829f2bbd7d
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>

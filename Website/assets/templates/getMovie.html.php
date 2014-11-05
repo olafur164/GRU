@@ -9,7 +9,7 @@
 					<div class="col-xs-12 col-sm-6 col-md-8">
 						<button type="button" class="btn btn-default btn-youtube" data-toggle="modal" data-target="#trailer-modal"><i class="fa fa-youtube-play"> Sýnishorn</i></button><br>
 						<label>Imdb: <span><?php echo $mrating?></span></label><br>
-						<label>Rotten Tomatoes:</label>
+						<label>Rotten Tomatoes:<?php if ($mrotten < 60) { echo '<img class="rotten" src="assets/images/splat.png"><span>' . $mrotten . '%</span>'; } else { echo '<img class="fresh" src="assets/images/tomato.png"><span>' . $mrotten . '%</span>'; }?></label>
 						<p class="mDesc pull-md-right">
 							<?php echo $mdesc; ?>
 						</p>
