@@ -1,12 +1,13 @@
 <?php
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
-$getData = "SELECT movies.id, movies.mname, movies.mdescriptions, movies.mimage, movies.mtrailer, movies.mrating, 
+
+if (isset($id)) {
+	$getData = "SELECT movies.id, movies.mname, movies.mdescriptions, movies.mimage, movies.mtrailer, movies.mrating, 
 					shows.movie_id_fk, shows.fdate, shows.time
 	FROM movies
 	JOIN shows
 	ON shows.movie_id_fk = movies.id	
-	WHERE movies.id = " . $id;;
-if (isset($id)) {
+	WHERE movies.id = " . $id;
 	try {
 		$query = $pdo ->prepare($getData);
 		$query->execute();
