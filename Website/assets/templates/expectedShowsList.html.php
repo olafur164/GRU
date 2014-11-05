@@ -10,10 +10,10 @@ require_once 'app/loadExpectedShows.php';
 		<?php 	$counter++; ?>
 		<div class="col-xs-12 col-sm-6 col-md-4">
 			<div class="thumbnail">
-				<a href="movie.php?id=<?php echo $id ?>"><img src="<?php echo $expected['Image'] ?>" alt="#"></a>
+				<a href="movie.php?id=<?php echo $id; ?>"><img src="<?php echo $expect['Image']; ?>" alt="#"></a>
 				<div class="caption">
-					<h3><?php echo $expect['MovieName'] . '<small class="pull-right">' . $expected['starts'] . '</small>'; ?></h3>
-					<p><?php echo $show['Descriptions'] ?></p>
+					<h3><?php echo $expect['MovieName'] . '<small class="pull-right">' . $expect['Starts'] . '</small>'; ?></h3>
+					<p><?php echo $expect['Descriptions'] ?></p>
 					<p><a href="movie.php?id=<?php echo $id ?>" class="btn btn-primary pull-right" role="button">Skoða nánar</a></p>
 					<div class="clearfix"></div>
 				</div>

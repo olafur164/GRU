@@ -12,7 +12,6 @@ require_once 'app/getMovieData.php';
 		<link rel="stylesheet" href="assets/stylesheets/main.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<script src="http://jwpsrv.com/library/mZjMVGQhEeScFQoORWfmyA.js"></script>
-		<script src="assets/javascripts/responsive-table.js"></script>
 	</head>
 	<body>
 		<!-- navbar -->

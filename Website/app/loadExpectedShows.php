@@ -2,7 +2,7 @@
 require_once 'init.php';
 $query = "SELECT DISTINCT(movies.id), movies.mname AS 'name', movies.mdescriptions AS 'descriptions', movies.mimage AS 'image', movies.mrating AS 'rating', movies.starts AS 'starts'
 	FROM movies
-	WHERE movies.starts > date";
+	WHERE movies.starts > CURDATE()";
 
 $showsQuery = $pdo->prepare($query);
 

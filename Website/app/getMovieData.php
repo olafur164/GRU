@@ -2,11 +2,8 @@
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
 
 if (isset($id)) {
-	$getData = "SELECT movies.id, movies.mname, movies.mdescriptions, movies.mimage, movies.mtrailer, movies.mrating, movies.mrottenrating,
-					shows.movie_id_fk, shows.fdate, shows.time
+	$getData = "SELECT movies.id, movies.mname, movies.mdescriptions, movies.mimage, movies.mtrailer, movies.mrating, movies.mrottenrating
 	FROM movies
-	JOIN shows
-	ON shows.movie_id_fk = movies.id	
 	WHERE movies.id = " . $id;
 	try {
 		$query = $pdo ->prepare($getData);
@@ -21,8 +18,6 @@ if (isset($id)) {
 		$mtrailer = $row['mtrailer'];
 		$mrating = $row['mrating'];
 		$mrotten = $row['mrottenrating'];
-		$date[] = array($row['fdate']);
-		$time[] = array($row['time']);
 		$error = false;
 	}
 }
