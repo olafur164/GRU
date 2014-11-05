@@ -16,7 +16,7 @@ try
 		$shows[$row->id] = [
 			'Image'			=>	$row->image,
 			'MovieName' 	=> 	$row->name,
-			'Descriptions'	=>	$row->descriptions,
+			'Descriptions'	=>	substr($row->descriptions, 0, 175) . '...',
 			'Screen' 		=> 	$row->screen,
 			'Rating'		=>	$row->rating,
 			'Date'			=>	$row->date,
