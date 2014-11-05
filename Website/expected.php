@@ -1,13 +1,18 @@
-<?php require_once 'app/getMovieData.php'; ?>
+<?php
+require_once 'app/init.php';
+require_once 'app/getMovieData.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bíóhúsið - Bestir á Íslandi</title>
-		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<title>Bíóhúsið<?php if ($error === false) { echo '- ' . $mname; } else {} ?></title>
+		<link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
+		<link rel="stylesheet" href="assets/stylesheets/theater/theater.css">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+		<script src="http://jwpsrv.com/library/mZjMVGQhEeScFQoORWfmyA.js"></script>
+		<script src="assets/javascripts/responsive-table.js"></script>
 	</head>
 	<body>
 		<!-- navbar -->
@@ -21,17 +26,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">Bíóhúsið</a>
+					<a class="navbar-brand" href="#">Bíóhúsið</a>
 				</div> <!-- navbar header -->
 
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.php">Forsíða</a></li>
-<<<<<<< HEAD
-=======
-						<li class="active"><a href="index.php">Forsíða</a></li>
->>>>>>> 5291176b844264dd46bd095c89cdaa8be2e9a511
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>
@@ -42,28 +43,26 @@
 
 			</div> <!-- container -->
 		</nav>
+		<?php
+		include_once 'assets/templates/modals/trailerModal.html.php';
+		include_once 'assets/templates/modals/loginModal.html.php';
+		include_once 'assets/templates/modals/newUserModal.html.php';
+		include_once 'assets/templates/expectedShowsList.html.php'; 
+		?>
 
-		<!-- login modal -->
-		<?php include_once 'assets/templates/modals/loginModal.html.php'; ?>
-
-		<!-- new user modal -->
-		<?php include_once 'assets/templates/modals/newUserModal.html.php'; ?>
-
-
-		<!-- jumbotron -->
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Bíóhúsið<small> - Aðeins það allra besta Hópur 15</small></h1>
-			</div>
-		</div>
-
-		<!-- Movies -->
-		<?php include_once 'assets/templates/currentShowsList.html.php'; ?>
-
-		
-		
-		<?php include_once 'assets/templates/footer.html.php'; ?>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="assets/javascripts/bootstrap.js"></script>
+		<div class="clearfix"></div>
+		<?php
+		include 'assets/templates/footer.html.php';
+		?>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="assets/javascripts/bootstrap.js"></script>
+		<script type='text/javascript'>
+		    jwplayer("playertFzGxhkmlweq").setup({
+		        file: <?php echo '\'' . $mtrailer . '\'';?>,
+		        title: 'Play',
+		        width: '100%',
+		        aspectratio: '16:9'
+		    });
+		</script>
 	</body>
 </html>
