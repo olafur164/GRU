@@ -3,7 +3,7 @@
 				<div class="movieInfo">
 					<div class="col-xs-12 col-sm-6 col-md-4">
 							<div class="mImg">
-								<?php echo '<img src="assets/images/' . $mimage .'">'; ?>
+								<?php echo '<img src="' . $mimage .'">'; ?>
 							</div>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-8">

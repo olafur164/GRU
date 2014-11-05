@@ -55,7 +55,7 @@ require_once 'app/getMovieData.php';
 				include 'assets/templates/getMovie.html.php';
 			}
 			else {
-				echo 'Þessi mynd er ekki til';
+				echo 'Mynd fannst ekki';
 			}
 			?>
 		</div>
