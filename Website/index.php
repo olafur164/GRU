@@ -21,13 +21,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Bíóhúsið</a>
+					<a class="navbar-brand" href="index.html">Bíóhúsið</a>
 				</div> <!-- navbar header -->
 
 				<!-- Toggling -->
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Forsíða</a></li>
+						<li><a href="index.php">Forsíða</a></li>
 						<li><a href="#">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>
