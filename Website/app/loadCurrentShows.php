@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
-$query = "SELECT DISTINCT(movies.id), movies.mname AS 'name', movies.mdescriptions AS 'descriptions', movies.mimage AS 'image', screen_id_fk AS 'screen', movies.mrating AS 'rating', fdate AS 'date', time, price 
+$query = "SELECT DISTINCT(movies.id), movies.mname AS 'name', movies.mdescriptions AS 'descriptions', movies.mimage AS 'image', screen_id_fk AS 'screen', movies.mrating AS 'rating', fdate AS 'date', time, price
 			FROM shows
 			INNER JOIN movies ON shows.movie_id_fk = movies.id
 			ORDER BY rating DESC";
@@ -16,7 +16,7 @@ try
 		$shows[$row->id] = [
 			'Image'			=>	$row->image,
 			'MovieName' 	=> 	$row->name,
-			'Descriptions'	=>	substr($row->descriptions, 0, 175) . '...',
+			'Descriptions'	=>	substr($row->descriptions, 0, 600) . '...',
 			'Screen' 		=> 	$row->screen,
 			'Rating'		=>	$row->rating,
 			'Date'			=>	$row->date,
@@ -25,7 +25,7 @@ try
 		];
 	}
 }
-catch (PDOException $e) 
+catch (PDOException $e)
 {
 	echo $e->getMessage();
 	die();
