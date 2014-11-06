@@ -49,7 +49,7 @@
 		<!-- jumbotron -->
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Bíóhúsið<small> - Aðeins það allra besta Hópur 15</small></h1>
+				<img src="assets/images/banner.jpg" alt="banners" class="img-responsive">
 			</div>
 		</div>
 

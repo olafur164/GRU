@@ -4,64 +4,39 @@
 				<div class="container">
 					<div class="row">
 
-						<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<h3>Lorem Lipsum</h3>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<h3>Bíóhúsið</h3>
 							<ul>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
+								<li>Forsíða</li>
+								<li>Í sýningu</li>
+								<li>Væntanlegt</li>
+								<li>Um Bíóhúsið</li>
 							</ul>
 						</div>
 
-						<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<h3>Lorem Lipsum</h3>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<h3>Viðskiptavinir</h3>
 							<ul>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
+								<li><a href="#login-modal" data-toggle="modal" data-target="#login-modal">Innskráning</a></li>
+								<li><a href="#newUser-modal" data-toggle="modal" data-target="#newUser-modal">Nýskrá</a></li>
+								<li></li>
+								<li></li>
 							</ul>
 						</div>
 
-						<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<h3>Lorem Lipsum</h3>
-							<ul>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-							</ul>
-						</div>
-
-						<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
-							<h3>Lorem Lipsum</h3>
-							<ul>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-								<li>Lorem</li>
-							</ul>
-						</div>
-
-						<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li> <a href="#"> <i class="fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                    </ul>
-                </div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+		                    <h3>Fylgstu með</h3>
+		                    <ul>
+		                        <li>
+		                            <div class="input-group">
+		                            	<input type="email" class="form-control" name="newsletterEmail" placeholder="Skráðu þig á póstlistann">
+		                            	<span class="input-group-btn">
+		                            		<button class="btn btn-default" type="button">Skrá mig</button>
+		                            	</span>
+		                            </div>
+		                        </li>
+		                    </ul>
+                		</div>
 
 					</div> <!-- row endar -->
 				</div> <!-- container endar -->
