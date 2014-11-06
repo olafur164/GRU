@@ -1,16 +1,8 @@
-
-<h2 class="mTitle"><?php echo $mname; ?></h2>
-<div class="row">
-	<div class="movieInfo">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<?php echo '<img src="' . $mimage .'" class="img-responsive">'; ?>
-
-			<h2 class="mTitle"><?php echo $mname; ?></h2>
+		<h2 class="mTitle"><?php echo $mname; ?></h2>
 			<div class="row">
 				<div class="movieInfo">
 					<div class="col-xs-12 col-sm-6 col-md-4">
-							<div class="mImg">
+							<div class="thumbnail">
 								<?php echo '<img src="' . $mimage .'">'; ?>
 							</div>
 					</div>
