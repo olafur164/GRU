@@ -1,7 +1,9 @@
 <?php
 $error = true;
+$hasShows = true;
 require_once 'app/init.php';
 require_once 'app/getMovieData.php';
+require_once 'app/getMovieShows.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,7 +34,7 @@ require_once 'app/getMovieData.php';
 				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.php">Forsíða</a></li>
-						<li><a href="#">Væntanlegt</a></li>
+						<li><a href="expected.php">Væntanlegt</a></li>
 						<li><a href="#">Um Bíóhúsið</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
