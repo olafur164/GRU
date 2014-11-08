@@ -1,4 +1,12 @@
-
+html, body {
+	height: 100%;
+}
+#wrapper {
+	min-height: 100%;
+}
+.content {
+	overflow:auto;
+}
 .footer {
 	background: $jumbotron-bg;
 	height: auto;

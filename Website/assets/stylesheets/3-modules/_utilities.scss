@@ -18,7 +18,10 @@
 .pull-left {
   float: left !important;
 }
-
+.margin-fix {
+  @include clearfix;
+  margin-bottom: $line-height-computed;
+}
 
 // Toggling content
 // -------------------------

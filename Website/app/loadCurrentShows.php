@@ -3,7 +3,7 @@ require_once 'init.php';
 $query = "SELECT DISTINCT(movies.id), movies.mname AS 'name', movies.mdescriptions AS 'descriptions', movies.mimage AS 'image', screen_id_fk AS 'screen', movies.mrating AS 'rating', fdate AS 'date', time, price
 			FROM shows
 			INNER JOIN movies ON shows.movie_id_fk = movies.id
-			WHERE shows.fdate = CURDATE()
+			WHERE shows.fdate = DATE(CURDATE())
 			ORDER BY rating DESC";
 
 $showsQuery = $pdo->prepare($query);

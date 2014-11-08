@@ -16,48 +16,51 @@ require_once 'app/getMovieShows.php';
 		<script src="http://jwpsrv.com/library/mZjMVGQhEeScFQoORWfmyA.js"></script>
 	</head>
 	<body>
-		<!-- navbar -->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<!-- Brand og toggle -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#biohusid-navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Bíóhúsið</a>
-				</div> <!-- navbar header -->
+		<div id="wrapper">
+			<!-- navbar -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand og toggle -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#biohusid-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Bíóhúsið</a>
+					</div> <!-- navbar header -->
 
-				<!-- Toggling -->
-				<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="index.php">Forsíða</a></li>
-						<li><a href="expected.php">Væntanlegt</a></li>
-						<li><a href="#">Um Bíóhúsið</a></li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="push-right"><a href="#login-modal" data-toggle="modal" data-target="#login-modal"><i class="fa fa-user"></i> Innskráning</a></li>
-					</ul>
-				</div>
+					<!-- Toggling -->
+					<div class="collapse navbar-collapse" id="biohusid-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.php">Forsíða</a></li>
+							<li><a href="expected.php">Væntanlegt</a></li>
+							<li><a href="#">Um Bíóhúsið</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="push-right"><a href="#login-modal" data-toggle="modal" data-target="#login-modal"><i class="fa fa-user"></i> Innskráning</a></li>
+						</ul>
+					</div>
 
-			</div> <!-- container -->
-		</nav>
-		<?php
-		include 'assets/templates/modals/trailerModal.html.php';
-		include 'assets/templates/modals/loginModal.html.php';
-		include 'assets/templates/modals/newUserModal.html.php';
-		?>
-		<div class="container">
+				</div> <!-- container -->
+			</nav>
+			<div class="margin-fix"></div>
 			<?php
-			if ($error === false) {
-				include 'assets/templates/getMovie.html.php';
-			}
-			else {
-				echo 'Mynd fannst ekki';
-			}
+			include 'assets/templates/modals/trailerModal.html.php';
+			include 'assets/templates/modals/loginModal.html.php';
+			include 'assets/templates/modals/newUserModal.html.php';
 			?>
+			<div class="content">
+				<?php
+				if ($error === false) {
+					include 'assets/templates/getMovie.html.php';
+				}
+				else {
+					echo 'Mynd fannst ekki';
+				}
+				?>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 		<?php
